@@ -1,0 +1,9 @@
+user_id,noma_pair_id,ofdm_subchannel,noma_role,distance_meters,path_loss_db,instantaneous_channel_gain,task_demand_bits,task_deadline_frames,task_deadline_ms,semantic_importance_weight
+0,0,0,Strong User,30.0,95.02,7.5637e-10,2714,5,50,0.551
+1,0,0,Weak User,61.43,105.92,5.9827e-11,5464,6,60,0.758
+2,1,0,Strong User,92.86,112.2,1.4381e-11,3611,2,20,0.98
+3,1,0,Weak User,124.29,116.63,6.0821e-13,7886,5,50,0.829
+4,2,1,Weak User,155.71,120.05,8.5357e-14,6106,2,20,0.56
+5,2,1,Strong User,187.14,122.85,7.5378e-13,6003,3,30,0.941
+6,3,1,Weak User,218.57,125.21,4.2493e-13,8253,5,50,0.858
+7,3,1,Strong User,250.0,127.25,5.8837e-13,6363,4,40,0.382

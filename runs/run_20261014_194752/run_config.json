@@ -1,0 +1,121 @@
+{
+  "network": {
+    "num_users": 8,
+    "num_pairs": 4,
+    "num_subchannels": 2,
+    "pairs_per_subchannel": 2,
+    "p_max_w": 1.0,
+    "subchannel_bandwidth_hz": 180000.0,
+    "frame_duration_s": 0.01,
+    "episode_length": 50,
+    "carrier_frequency_hz": 3500000000.0,
+    "path_loss_exponent": 3.5,
+    "reference_distance_m": 1.0,
+    "speed_of_light_m_s": 300000000.0,
+    "user_distance_range_m": [
+      30.0,
+      250.0
+    ],
+    "noise_figure_db": 7.0,
+    "thermal_noise_density_dbm_hz": -174.0,
+    "subchannel_pair_mapping": {
+      "0": [
+        0,
+        1
+      ],
+      "1": [
+        2,
+        3
+      ]
+    },
+    "pair_user_mapping": {
+      "0": [
+        0,
+        1
+      ],
+      "1": [
+        2,
+        3
+      ],
+      "2": [
+        4,
+        5
+      ],
+      "3": [
+        6,
+        7
+      ]
+    }
+  },
+  "tasks": {
+    "demand_range_bits": [
+      2000,
+      10000
+    ],
+    "deadline_range_frames": [
+      2,
+      6
+    ],
+    "importance_range": [
+      0.2,
+      1.0
+    ]
+  },
+  "reward": {
+    "lambda_energy": 0.01,
+    "lambda_deadline": 0.5
+  },
+  "training": {
+    "algorithm": "SAC",
+    "policy_type": "MlpPolicy",
+    "hidden_layers": [
+      128,
+      128
+    ],
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "buffer_size": 25000,
+    "learning_starts": 500,
+    "batch_size": 128,
+    "train_freq": 4,
+    "gradient_steps": 1,
+    "total_timesteps": 20000,
+    "max_runtime_seconds": 600,
+    "max_cpu_threads": 2,
+    "seed": 42,
+    "eval_freq": 2000,
+    "eval_episodes": 5,
+    "save_freq": 5000
+  },
+  "evaluation": {
+    "validation_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004
+    ],
+    "test_seeds": [
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  }
+}
